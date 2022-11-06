@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://media.discordapp.net/attachments/898978597996466189/1038811549642522694/Untitled4.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://media.discordapp.net/attachments/898978597996466189/1038811549642522694/Untitled4.png" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://media.discordapp.net/attachments/898978597996466189/1038811549642522694/Untitled4.png" color="#111" />
+
+
+  <title>Sketch Home</title>
+  
+  
+  
+  
+<style>
+body,html {
+  height:100%;
+  margin:0px;
+  background-color:black;
+  overflow-x:hidden;
+}
+
+#header {
+  background-color:black;
+    z-index:5;
+  position:fixed;
+  height:50px;
+  border-width:0px;
+  border-bottom-width:1px;
+  border-style:solid;
+  border-color:grey;
+  display:flex;
+  flex-direction:row;
+  padding-left:4px;
+    width:100%;
+}
+
+#name {
+  font-family:Sans-serif;
+  color:white;
+  font-size:25px;
+  margin:0px;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:4px;
+}
+
+#name2 {
+  font-family:Sans-serif;
+  color:white;
+  font-size:35px;
+  margin:0px;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.name2small {
+  font-family:Sans-serif;
+  color:white;
+  font-size:17px;
+  margin:0px;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  border-width:0px;
+    border-bottom-width:1px;
+  border-style:solid;
+  border-color:grey;
+  margin-top:6px;
+}
+
+#footer {
+  width:100%;
+  height:100px;
+  background-color:#424242;
+  margin-top:30px;
+  padding-top:20px;
+  display:flex;
+  flex-direction:collumn;
+  justify-content:center;
+}
+
+#footerChild {
+  width:100%;
+  height:60%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+#end {
+  width:100%;
+  font-size:40px;
+  color:white;
+  font-family:Sans-serif;
+  text-align:center;
+}
+
+.holder {
+  background-color:#424242;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:50px;
+  color:white;
+  padding:10px;
+  font-family:Sans-serif;
+  display:flex;
+  flex-direction:row;
+}
+
+.holder2 {
+  margin-top:10px;
+  background-color:#424242;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:25px;
+  color:white;
+  padding:10px;
+  font-family:Sans-serif;
+    display:flex;
+  flex-direction:column;
+}
+
+.holder22 {
+  margin-top:8px;
+  background-color:#424242;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:20px;
+  color:white;
+  padding:10px;
+  font-family:Sans-serif;
+    display:flex;
+  flex-direction:column;
+}
+
+#twitter {
+  object-fit:contain;
+  width:30px;
+  height:40px;
+}
+
+#yt,#dc {
+  object-fit:contain;
+  width:30px;
+  height:40px;
+  margin-left:12px;
+}
+
+a {
+  margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;
+}
+
+#top {
+  position:fixed;
+  right:16px;
+  bottom:16px;
+  color:white;
+  font-family:Sans-serif;
+  border-radius:15px;
+  background-color:#595959;
+  border-width:0px;
+  font-size:15px;
+  width:100px;
+  height:50px;
+  max-height:30px;
+  display:none;
+}
+
+  
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.codeView {
+  margin-top:8px;
+  width:100%;
+  display:flex;
+  felx-direction:row;
+}
+
+th,td{
+  font-size:17px;
+  padding:6px;
+  font-size:17px;
+  background-color:#595959;
+  border-radius:20px;
+  min-width:160px;
+  text-align:center;
+  margin-bottom:8px;
+  margin-right:8px;
+}
+
+table{
+  margin:8px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0px;
+}
+
+.holder {
+  background-color:#424242;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  border-radius:25px;
+  color:white;
+  padding:10px;
+  height:max-content;
+  font-family:Sans-serif;
+  display:flex;
+  flex-direction:column;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<div id='header'>
+    <img src='https://media.discordapp.net/attachments/898978597996466189/1038811549642522694/Untitled4.png' id='logo' style='margin-left:2px;height:50px; width:50px;  object-fit:contain; margin-top:auto;margin-bottom:auto;'>
+  <p id='name'>Sketch Home</p>
+</div>
+
+<div id='h' style='display:flex; flex-direction:row; justify-content:center; margin-top:65px; width:100%; min-height:100%;'>
+  <div style='display:flex; flex-direction:column; justify-content: flex-start;'>
+    <p id='name2'> Welcome👋 to Sketch</p>
+    <p class='name2small'> To get Started Open or Start a new project.</p>
+
+      <div class='holder'>
+        <p id='new' style='padding-bottom:8px; text-align:left; width:100%; margin-top:0px;' class='name2small'>Create New Project</p>
+        <p id='open' style='border-width:0px; text-align:left; width:100%; margin-top:8px;' class='name2small'>Open Existing Project</p>
+      </div>
+    <p class='name2small'>Docs</p>
+    <div style='border-radius:22px' class='holder'>
+        <p id='openDocs' style='border-width:0px; text-align:left; width:100%; margin-top:0px;' class='name2small'>Go To Docs</p>
+      </div>
+        <p class='name2small'>Teacher Rescources</p>
+    <div style='border-radius:22px'  class='holder'>
+        <p style='border-width:0px; text-align:left; width:100%; margin-top:0px;'class='name2small'>Go To Teacher Rescources</p>
+      </div>
+    
+    <p class='name2small'>Tutorials</p>
+    <div class='holder'>
+              <p style='padding-bottom:8px; text-align:left; width:100%; margin-top:0px;' class='name2small'>Official: Make A Magic 8 Ball</p>
+                    <p style='padding-bottom:8px; text-align:left; width:100%; margin-top:8px;' class='name2small'>Official: Delay Your Actions</p>
+                    <p style='padding-bottom:8px; text-align:left; width:100%; margin-top:8px;' class='name2small'>Official: Make A Number Quesing Game</p>
+                          <p style='padding-bottom:8px; text-align:left; width:100%; margin-top:8px;' class='name2small'>Official: Make A Rock,Paper,Scissors Game</p>
+                          <p style='padding-bottom:8px; text-align:left; width:100%; margin-top:8px;' class='name2small'>Official: Sharing Links</p>
+                                <p style='padding-bottom:8px; text-align:left; width:100%; margin-top:8px;' class='name2small'>Official: Publish Your Amazing Project</p>
+        <p style='border-width:0px; text-align:left; width:100%; margin-top:8px;' onclick='window.open("https://www.google.com/search?q=Sketch+Tutorials&rlz=1CAVHDQ_enNL928&sxsrf=ALiCzsbrRO0EhBA--rzo50rK0NLdrVoAEA%3A1667745557295&ei=FcdnY_26EdCA9u8P4PKX-AY&ved=0ahUKEwi9mZKs5Jn7AhVQgP0HHWD5BW8Q4dUDCA8&uact=5&oq=Sketch+Tutorials&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQywEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABAWEB4QCjIGCAAQFhAeMgYIABAWEB4yCAgAEBYQHhAKMgYIABAWEB46CggAEEcQ1gQQsAM6BwgAELADEEM6BAgjECc6BAgAEEM6CgguEMcBENEDEEM6CwguEIAEEMcBENEDOgUIABCRAjoNCC4QxwEQ0QMQ1AIQQzoGCAAQChBDOgsILhCABBDHARCvAToHCC4QgAQQCjoHCAAQgAQQCjoLCC4QrwEQxwEQgARKBAhBGABKBAhGGABQogxYtiFgvSNoAXABeACAAdYBiAHnEJIBBjMuMTEuMpgBAKABAcgBCsABAQ&sclient=gws-wiz-serp");' class='name2small'>Search Google For More Tutorials</p>
+      </div>
+  </div>
+</div>
+
+<div id='footer'>
+  <div style='width:100%; height:100%;'>
+  <div id='footerChild'>
+    <img id='twitter'src='https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png' onclick='window.open("https://twitter.com/Sketch68862592")'>
+    <img id='dc' src='https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-White-1024x780.png' onclick='window.open("https://discord.gg/NxAJu3n3NS")'>
+        <img id='yt' src='https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png' onclick='window.open("https://www.youtube.com/channel/UCdI5Lpnho7khE1DnDyrD6Ig")'>
+  </div>
+          <p style='margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;'>Sketch is free thanks to our donors.</p>
+              <p style='margin:0px;width:100%; font-size:12px; text-align:center; color:white;font-family:Sans-serif;'>Feel free to <a href='https://www.buymeacoffee.com/SketchDonate'> Support us by donating</a>.</p>
+  </div>
+</div>
+
+<button id='top'>Back To Top</button>
+  
+  <script src='https://cdn.jsdelivr.net/gh/lukeplays33/Design-Responsive@main/DesignResponsive.js'></script>
+      <script id="rendered-js" type="module">
+//https://cdn.jsdelivr.net/gh/lukeplays33/Design-Responsive@main/DesignResponsive.js
+
+//import { getWidth,getHeight,resizeElement, resizeAllElements,setSize,getResizedElements} from "https://codepen.io/lukeplays33/pen/RwyjKzX.js";
+
+
+resizeElement(document.getElementById('logo'),['height']);
+
+resizeElement(document.getElementById('footer'),['marginTop','width','height','padding-top']);
+
+resizeElement(document.getElementById('twitter'),['width','height']);
+resizeElement(document.getElementById('yt'),['width','height']);
+resizeElement(document.getElementById('dc'),['width','height']);
+
+resizeElement(document.getElementById('top'),['border-radius','right','bottom','width','font-size','max-height','height']);
+
+resizeElement(document.getElementById('name2'),['font-size','width','margin-top']);
+
+resizeElement(document.getElementById('h'),['font-size','width','margin-top']);
+
+for(var i of document.getElementsByClassName('name2small')) {
+  resizeElement(i,['padding','width','font-size','margin-top']);
+}
+
+for(var i of document.getElementsByClassName('holder')) {
+  resizeElement(i,['margin-top','padding-bottom','width','font-size','padding-top']);
+}
+
+resizeAllElements(getResizedElements());
+
+document.getElementById('top').onclick = function () {
+  document.body.scrollTop = 0;
+  document.getElementById('top').style.display = 'none';
+}
+
+window.onwheel = function () {
+  if(document.body.scrollTop <= 100) {
+    document.getElementById('top').style.display = 'none';
+  } else {
+    document.getElementById('top').style.display = 'block';
+  }
+}
+
+window.ontouchmove = function () {
+  if(document.body.scrollTop <= 100) {
+    document.getElementById('top').style.display = 'none';
+  } else {
+    document.getElementById('top').style.display = 'block';
+  }
+}
+
+//alert(window.localStorage.getItem('new'))
+if(window.localStorage.getItem('newSketch') == 'lol') {
+  document.getElementById('name2').innerHTML = 'Welcome back👋 to Sketch'
+} else {
+  window.localStorage.setItem('newSketch','lol');
+}
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
